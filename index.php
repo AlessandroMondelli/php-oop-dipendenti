@@ -2,9 +2,9 @@
 include_once 'dipendente.php'; //Includo file che contiene classe dipendente
 include_once 'owner.php'; //Includo file che contiene classe dipendente
 
-$dipendente = new Dipendente('Pippo','Rossi','237AB','39841002');
-$dipendente_2 = new Dipendente('Paperino','Bianchi','512NX','47612402');
-$dipendente_3 = new Dipendente('Topolino','Neri','251HJ','89710223');
+$dipendente = new Dipendente('Pippo','Rossi','237AB','39841002','8');
+$dipendente_2 = new Dipendente('Paperino','Bianchi','512NX','47612402','6');
+$dipendente_3 = new Dipendente('Topolino','Neri','251HJ','89710223','4');
 
 $owner = new Owner('Paperina','Verdi','000AA','34721823','0124511AADW1241');
 
@@ -23,10 +23,11 @@ $owner = new Owner('Paperina','Verdi','000AA','34721823','0124511AADW1241');
             <h1>Gestione Dipendenti</h1>
         </header>
         <main>
-            <div class="owner">
+            <div id="owner" class="dipendenti">
                 <h2>Capo Aziendale</h2>
-                <div class="dipendente">
+                <div id="own" class="dipendente">
                     <p><?php $owner->printDip(); //Richiamo funzione per stampare i dati del capo a schermo ?></p>
+
                 </div>
             </div>
             <div class="dipendenti">

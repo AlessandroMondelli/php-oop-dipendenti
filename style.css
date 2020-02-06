@@ -29,4 +29,6 @@ main {
 
 .dipendente {
     margin: 10px 0;
+    border: 2px solid lightgrey;
+    padding: 5px;
 }
